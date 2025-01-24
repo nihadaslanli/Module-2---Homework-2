@@ -4,7 +4,26 @@ namespace Module_2___Homework_2
 {
     internal class Program
     {
-      
+        #region task1
+        static void Main(string[] args, string salam)
+        {
+            string input = Console.ReadLine();
+            string output = Result(input);
+            Console.WriteLine(output);
+
+
+
+        }
+
+        static string Result(string input)
+        {
+
+            var divide = input.Split('.');
+            return divide[1] + '.' + divide[0];
+
+
+        }
+        #endregion
         #region task2
         //static void Main(string[] args)
         //{
